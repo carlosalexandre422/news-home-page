@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/normalize.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  
+  <script type="text/javascript">
+    window.onload = function(){
+        document.querySelector(".menu_mobile").addEventListener("click", function(){
+            if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                document.querySelector(".menu nav ul").style.display = 'none';
+            } else {
+                document.querySelector(".menu nav ul").style.display = 'flex';
+            }
+        });
+    };
+</script>
+
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href=""><img src="assets/images/logo.svg" alt="logo"/></a>
+      </div>
+      <div class="menu">
+        <nav>
+          <div class="menu_mobile">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section class="first">
+    <div class="container">
+      <section class="main_content">
+        <div class="big_image">
+          <picture>
+            <source media="(max-width: 376px)" srcset="image-web-3-mobile.jpg">
+            <source media="(min-width: 376px)" srcset="image-web-3-desktop.jpg">
+            <img src="image-web-3-desktop.jpg" alt="a web-3-desktop image">
+          </picture>
+    
+        </div>
+        <div class="big_content">
+          <div class="main_text">
+            <h1>The Bright Future of Web 3.0?</h1>
+          </div>
+          <div class="second_text">
+            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+            But is it really fulfilling its promise?</p>
+
+            <div class="readMore">
+              <a href='123'>READ MORE</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <aside>
+        <div class="news">
+          <div class="tittle">
+            <h2>New</h2>
+          </div>
+          <div class="new">
+            <div class="new_tittle"><a href="">Hydrogen VS Electric Cars</a></div>
+            <div class="new_text"><a href="">Will hydrogen-fueled cars ever catch up to EVs?</a></div>
+          </div>
+          <div class="new">
+            <div class="new_tittle"><a href="">The Downsides of AI Artistry</a></div>
+            <div class="new_text"><a href="">What are the possible adverse effects of on-demand AI image generation?</a></div>
+          </div>
+          <div class="new">
+            <div class="new_tittle"><a href="">Is VC Funding Drying Up?</a></div>
+            <div class="new_text"><a href="">Private funding by VC firms is down 50% YOY. We take a look at what that means.</a></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+  <section class="second">
+    <div class="container">
+      
+        <div class="top1">
+          <a href="#">
+          <div class="small_image">
+            <img src="assets/images/image-retro-pcs.jpg " alt="retro pcs"/>
+          </div>
+          <div class="small_content">
+            <div class="sc_number">01</div>
+            <div class="sc_tittle"><h2>Reviving Retro PCs</h2></div>
+            <div class="sc_text"><p>What happens when old PCs are given modern upgrades?</p></div>
+          </div>
+          </a>
+        </div>      
+      <div class="top2">
+        <a href="#">
+          <div class="small_image">
+            <img src="assets/images/image-top-laptops.jpg" alt=" top laptops"/>
+          </div>
+          <div class="small_content">
+            <div class="sc_number">02</div>
+            <div class="sc_tittle"><h2>Reviving Retro PCs</h2></div>
+            <div class="sc_text"><p>What happens when old PCs are given modern upgrades?</p></div>
+          </div>
+          </a>
+      </div>
+      <div class="top3">
+        <a href="#">
+          <div class="small_image">
+            <img src="assets/images/image-gaming-growth.jpg" alt="gaming growth"/>
+          </div>
+          <div class="small_content">
+            <div class="sc_number">03</div>
+            <div class="sc_tittle"><h2>Reviving Retro PCs</h2></div>
+            <div class="sc_text"><p>What happens when old PCs are given modern upgrades?</p></div>
+          </div>
+          </a>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  <!-- Home
+  New
+  Popular
+  Trending
+  Categories
+
+  The Bright Future of Web 3.0?
+
+  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+  But is it really fulfilling its promise?
+
+  Read more
+
+  New 
+
+  Hydrogen VS Electric Cars
+  Will hydrogen-fueled cars ever catch up to EVs?
+
+  The Downsides of AI Artistry
+  What are the possible adverse effects of on-demand AI image generation?
+
+  Is VC Funding Drying Up?
+  Private funding by VC firms is down 50% YOY. We take a look at what that means.
+
+  01
+  Reviving Retro PCs
+  What happens when old PCs are given modern upgrades?
+
+  02
+  Top 10 Laptops of 2022
+  Our best picks for various needs and budgets.
+
+  03
+  The Growth of Gaming
+  How the pandemic has sparked fresh opportunities.
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
